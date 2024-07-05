@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    spark-local-dev:
+        image: spark-base
+        build: .
+        volumes:
+            - ./spark-app:/opt/spark/work-dir
+        ports:
+            - 8888:8888
