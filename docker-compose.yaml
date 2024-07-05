@@ -2,6 +2,7 @@ version: '3.8'
 services:
     spark-local-dev:
         image: spark-base
+        container_name: spark-local-dev
         build: .
         volumes:
             - ./spark-app:/opt/spark/work-dir
