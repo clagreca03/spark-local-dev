@@ -8,3 +8,4 @@ services:
             - ./spark-app:/opt/spark/work-dir
         ports:
             - 8888:8888
+            - 8080:8080
