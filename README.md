@@ -6,16 +6,15 @@ This is a self-contained spark development environment designed to provide maxim
 - [PyArrow](https://arrow.apache.org/docs/python/index.html)
 
 
-The local working directory is `/spark-app` and all files in this directory will be available to the Jupyter Lab environment. Once the environment is running, the following web services will become accessbile: 
+The local working directory is `/spark-app` and all files in this directory will be available to the Jupyter Lab environment. Once the environment is running, these web services will become accessbile: 
 - Jupyter Lab - http://localhost:8888
-- Spark - 
+- Spark - http://localhost:8080
 
 ## Setup
 
 ### Run w/ docker compose
 ```shell
-docker-compose build
-docker-compose up -d
+docker-compose up --build -d
 docker-compose down
 ```
 
@@ -25,7 +24,6 @@ docker build -t spark-base .
 docker run --rm --name spark-base -p 8888:8888 -it spark-base
 docker stop spark-base
 ```
-
 
 ## References
 - https://hub.docker.com/_/spark
