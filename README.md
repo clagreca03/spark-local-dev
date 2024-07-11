@@ -9,6 +9,7 @@ This is a self-contained spark development environment designed to provide maxim
 The local working directory is `/spark-app` and all files in this directory will be available to the Jupyter Lab environment. Once the environment is running, these web services will become accessbile: 
 - Jupyter Lab - http://localhost:8888
 - Spark - http://localhost:8080
+- MinIO - http://localhost:9001/login
 
 ## Setup
 
@@ -27,4 +28,6 @@ docker stop spark-base
 
 ## References
 - https://hub.docker.com/_/spark
+- https://hub.docker.com/r/bitnami/minio
 - https://stackoverflow.com/a/61353480
+- https://stackoverflow.com/a/59364208
